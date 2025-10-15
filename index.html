@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Docker Web Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+    h1 {
+      color: #0078d7;
+    }
+    p {
+      font-size: 1.2rem;
+    }
+    footer {
+      position: absolute;
+      bottom: 10px;
+      font-size: 0.9rem;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+  <h1>🚀 Hello from Docker!</h1>
+  <p>This page is served from an Nginx container built with Docker.</p>
+  <footer>Commit Hash: <span id="commit"></span></footer>
+
+  <script>
+    // You can later inject commit hash dynamically if needed
+    document.getElementById('commit').textContent = "latest build";
+  </script>
+</body>
+</html>
