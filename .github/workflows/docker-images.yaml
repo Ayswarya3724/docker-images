@@ -16,7 +16,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0   # ensures full git data so we can derive short SHA reliably
+          fetch-depth: 0  # ensures full git data so we can derive short SHA reliably
 
       - name: Set short commit SHA env
         # Use GITHUB_SHA and create SHORT_SHA for tagging
